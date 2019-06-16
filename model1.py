@@ -10,7 +10,8 @@ global p
 p = 4  #p参数
 #test code
 if __name__ == "__main__":
-    db = pymysql.connect("localhost", "root", "474102", "softwareengineering")
+    db = pymysql.connect("localhost", "root", "password",
+                         "softwareengineering")
     cursor = db.cursor()
 
 
