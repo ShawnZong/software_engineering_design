@@ -12,11 +12,11 @@ not_exceed_10 = True
 
 time_start = time.time()  #计开始时
 #连接数据库，输入数据库名，密码，表名
-db2 = pymysql.connect("localhost", "root", "474102", "softwareengineering")
+db2 = pymysql.connect("localhost", "root", "password", "softwareengineering")
 cursor = db2.cursor()  #数据库游标。用来进行各种混杂的查询
 db3 = pymysql.connect("localhost",
                       "root",
-                      "474102",
+                      "password",
                       "softwareengineering",
                       cursorclass=pymysql.cursors.SSCursor)
 cursor_base2 = db3.cursor()  #sscursor数据库游标，专门用来读取大量数据用
